@@ -10,7 +10,7 @@ function truncateString(str, num) {
 		str = str.substring(0, index);
 		str = str.concat(trunc);
 	}
-	console.log(str)
+	return str;
 }
 
 truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length);
