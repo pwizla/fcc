@@ -1,0 +1,121 @@
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<body data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- // navbar -->
+
+<nav class="navbar navbar-default navbar-fixed-top" id="myNav">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#about">PIERRE WIZLA</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="abo" href="#about"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a></li>
+        <li id="por"><a href="#portfolio"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> Portfolio</a></li>
+        <li id="con"><a href="#contact"><span class="glyphicon glyphicon-envelope"></span>  Contact</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10">
+      <!-- short presentation with rounded image -->
+      <div id="about">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-1 col-sm-1"></div>
+            <div class="col-md-6 col-sm-6 col-xs-8"><p>My name is <span class="pw-highlight">Pierre Wizla</span> <br />and I'm a self-taught <br /><span class="pw-highlight">Front End Web Developer</span><br /><br /><small><em>Currently living in France but open to working on any project from all over the world.</em></small></p></div>
+            <div class="col-md-4 col-sm-4 col-xs-4"><img class="img-responsive img-rounded" id="mypic" src="https://github.com/pwizla/mycloud/blob/master/mevictojan16.png?raw=true"></img></div>
+            <div class="col-md-1 col-sm-1"></div>
+          </div> <!-- row -->
+        </div> <!-- container-fluid -->
+      </div> <!-- about -->
+      <!-- portfolio -->
+      <div id="portfolio" class="container-fluid">
+        <h2>PORTFOLIO</h2>
+        <div class="row">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-10">
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <a href="http://todolist.pwizla.com" class="thumbnail">
+                  <img src="https://github.com/pwizla/mycloud/blob/master/fcc-port-todo.png?raw=true" alt="Thumbnail of Todo list web app">
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <a href="#" class="thumbnail">
+                  <img src="https://github.com/pwizla/mycloud/blob/master/comingsoon.png?raw=true" alt="Coming soon…">
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <a href="#" class="thumbnail">
+                  <img src="https://github.com/pwizla/mycloud/blob/master/comingsoon.png?raw=true" alt="Coming soon…">
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <a href="#" class="thumbnail">
+                  <img src="https://github.com/pwizla/mycloud/blob/master/comingsoon.png?raw=true" alt="Coming soon…">
+                </a>
+              </div>
+            </div> <!-- row -->
+          </div> <!-- col-xs-10 -->
+          <div class="col-xs-1"></div>
+        </div> <!-- row -->
+      </div> <!-- #portfolio -->
+      <!-- contact zone -->
+      <div id="contact" class="container-fluid">
+        <h2>CONTACT</h2>
+          <!-- 2 columns, one for form, the other one for info text -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-6"> <!-- left column = form -->
+            <form class = "form" role = "form">
+              <div class = "form-group">
+                <label class = "sr-only" for = "name">Name</label>
+                <input type = "text" class = "form-control input-lg contactline" id = "name" placeholder = "Name">
+              </div>
+              <div class = "form-group">
+                <label class = "sr-only" for = "name">Name</label>
+                <input type = "text" class = "form-control input-lg contactline" id = "phone" placeholder = "Phone number">
+              </div>
+              <div class = "form-group">
+                <label class = "sr-only" for = "phone">Name</label>
+                <input type = "text" class = "form-control input-lg contactline" id = "email" placeholder = "E-mail address">
+              </div>
+              <div class = "form-group">
+                <label class = "sr-only" for = "message">Message</label>
+                <textarea class="form-control input-lg contactline" rows="6" name="message" placeholder="Message"></textarea>
+              </div>
+              <input type="submit" class="input-lg" name="submit" value="Send">
+            </form>
+          </div>
+          <div class="col-xs-12 col-sm-6 contacttext"> <!-- right column = accompanying text -->
+            <div class="row">
+              <div class="col-xs-2"></div>
+              <div class="col-xs-8"> <!-- text -->
+                If you want to get in touch with me, know more about my work, my passions and motivations, or if you just think you could teach me some Swiss cooking receipts, please drop me a message anytime. <br />I promise I'll reply ASAP!</div>
+              <div class="col-xs-2"></div>
+            </div> <!-- row for right column -->
+          </div> <!-- contacttext -->
+        </div> <!-- row for two columns -->
+      </div> <!-- #contact -->
+    </div> <!-- class col-xs-10 -->
+    <div class="col-xs-1"></div>
+  </div> <!-- row -->
+</div> <!-- container-fluid -->
+<!-- footer -->
+
+</body>

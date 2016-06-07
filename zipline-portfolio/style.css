@@ -1,0 +1,84 @@
+.navbar {
+  font-family: Arial;
+  padding-left: 8%;
+  padding-right: 8%;
+  background-color: #222;
+  opacity: .9;
+  border-bottom: none;
+}
+
+.navbar-brand {
+  letter-spacing: +.05em;
+}
+
+.navbar-nav {
+  background-color: #111;
+}
+
+.navbar a{
+  color: white !important;
+}
+
+.navbar a:hover {
+  background-color: #444 !important;
+  color: #fff !important;
+}
+
+.fixedimage {
+  height: 1080px;
+  text-align: center;
+  background-image: url("http://s8.postimg.org/y1w8gzw0z/alpgruem2015.jpg");
+  background-attachment: fixed;
+  /*background-position: center top;*/
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+
+.jumbotron h1 {
+  padding-top: 2em;
+  text-shadow: 2px 2px #cdc;
+}
+
+.jumbotron h2 {
+  color: #d00;
+}
+
+#portfolio {
+  position: relative;
+  background-image: url("http://s21.postimg.org/fft20wq45/portfolio_BG.jpg");
+  background-position: center;
+  top: 550px;
+  height: 1080px;
+  padding-top: 7em;
+  color: #fff;
+}
+
+.pw-button-container {
+  margin-top: 6em;
+}
+
+#twitter-button, #github-button, #fcc-button {
+
+}
+
+#twitter-button:hover {
+  background-color: #4099ff;
+  border-color:  #4099ff;
+}
+
+#github-button:hover {
+  background-color: #6cc644;
+  border-color: #6cc644;
+}
+
+#fcc-button:hover {
+  background-color: #472d13;
+  border-color: #472d13;
+}
+
+#twitter-button:hover, #github-button:hover, #fcc-button:hover {
+  color: #fff !important;
+}

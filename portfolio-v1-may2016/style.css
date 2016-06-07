@@ -1,0 +1,144 @@
+/*
+#fae5d4 porcelain
+#514a45 steel
+#333438 charcoal
+#a28e7a deep beige
+#816c57 brown
+#d2c2ae beige
+
+
+* #fee8d6 porcelain > NAVBAR HOVER + ACTIVE FG, PW-HIGHLIGHT
+  #434141 brownish charcoal > NAVBAR ACTIVE BG
+  #5d5248 steel
+  #e8dacb fluffy white
+* #a18e79 light coffee > ABOUT BG
+* #2a2d32 charcoal 
+* #86715a faded gold > PORTFOLIO BG
+  #c9b6a0 old silver
+*/
+
+body {
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
+  position: relative;
+  background-color: #434040;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 1.5em;
+  color: #333438;
+}
+
+.navbar {
+  background-color: #fffffc;
+  border: none;
+  color: #434141 !important;
+}
+
+.navbar a {
+  color: #434141 !important;
+}
+
+.navbar a:hover {
+  color: #fffffc !important;
+  -webkit-transition: all .15s ease-in;
+  -moz-transition: all .15ms ease-in;
+  -ms-transition: all .15ms ease-in;
+  -o-transition: all .15ms ease-in;
+  transition: all .15s ease-in;
+}
+
+.navbar a[href="#about"]:hover {
+  background-color: #a18e79 !important;
+}
+
+.navbar a[href="#portfolio"]:hover ¶
+  
+.navbar-fixed-top .active a {
+  color: #000 !important;
+}
+
+.navbar .active a[href="#about"],
+.navbar a[href="about"]:hover { 
+  background-color: #a18e79 !important;
+}
+
+.navbar .active a[href="#portfolio"],
+.navbar a[href="#portfolio"]:hover { 
+  background-color: #d4c5b2 !important;
+}
+
+.navbar .active a[href="#contact"],
+.navbar a[href="#contact"]:hover { 
+  background-color: #bea68f !important;
+}
+
+.navbar-brand {
+  color: #e8dacb !important;
+}
+
+.pw-highlight {
+  color: #fee8d6;
+}
+
+#about {
+  color: #2a2d32;
+  background-color: #a18e79;
+  padding-top: 6em;
+  padding-bottom: 3em;
+  font-size: 2em;
+}
+
+#mypic {
+  border-radius: 50%;
+}
+
+#portfolio {
+  background-color: #d4c5b2;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+#portfolio a:hover {
+  border: 5px #2a2d32 solid;
+}
+
+#contact {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  background-color: #bea68f;
+}
+
+.contacttext { 
+  padding-top: 0.6em;
+  font-size: 1.6em;
+  color: #434141;
+}
+
+input, textarea {
+  background-color: #bea68f !important;
+  color: #434141 !important;
+  border: none;
+}
+
+.contactline {
+  color: #434141 !important;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px #434141;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 480px) {
+  #about {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 320px) {
+  #about {
+    font-size: 1em;
+  }
+}
