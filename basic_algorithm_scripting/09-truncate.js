@@ -2,9 +2,9 @@ function truncateString(str, num) {
 	var trunc = "...";
 	var index;	
 	if (num <= 3) {
-		index = num - 1;
+		index = num;
 	}	else {
-		index = num - 4;
+		index = num - 3;
 	}
 	str = str.substring(0, index);
 	str = str.concat(trunc);
