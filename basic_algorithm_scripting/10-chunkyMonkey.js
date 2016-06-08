@@ -5,7 +5,7 @@ function chunkArrayInGroups(arr, size) {
   // create loop to automate slicing
   for (var i = 0; i <= arr.length - size; i += size) {
 	  newArr.push(arr.slice(i, i+size));
-	  console.log("newArr: " + newArr);
+	  console.log("newArr: " , newArr);
 	}
   // push further sub-array into the new one
   /* what about dealing with remainders? i.e. when original array 
