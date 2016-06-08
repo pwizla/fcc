@@ -15,7 +15,7 @@ function chunkArrayInGroups(arr, size) {
 	  newArr.push(arr.slice(i, i+size));
 	}
 	// when items remains, push them to newArr
-  if (rem != 0) {
+  if (rem !== 0) {
   	/* slice takes two arguments: begin and end
   		 the 'begin' index is calculated by substracting 'rem' to 'len';
   		 for instance, if the array 'is' composed of 8 items, and
