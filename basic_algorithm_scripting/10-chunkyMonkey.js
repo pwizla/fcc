@@ -14,4 +14,4 @@ function chunkArrayInGroups(arr, size) {
 		see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice */
 }
 
-chunkArrayInGroups(["a", "b", "c", "d"], 2);
+chunkArrayInGroups(["a", "b", "c", "d", "e"], 2);
