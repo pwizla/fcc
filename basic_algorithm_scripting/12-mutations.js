@@ -9,65 +9,27 @@
 		for (var i = 0; i < arr.length; i++)	{
 			arr[i] = arr[i].toLowerCase();
 		}
-		/* create an array with all the letters 
-		   from the second item of the input */
-		var first = arr[0].split('');
-		var second = arr[1].split('');
-		// console.log("first: ", first);
-		// console.log("second: ", second);
-		var fLen = first.length;
-		var sLen = second.length;
 
-		/* check whether each letter from this newly created array
-			 is included in the first item of the input */
-		var firstIndex = 0;
-		var secondIndex = 0;
-		var found = false;
-			// while the letter corresponding to second[secondIndex] is not found in first, go through 'first'
-			// safety net: don't forget to set boundary to exit while loop:
-			// firstIndex can't be greater than fLen !!
-		while (secondIndex < sLen) {
-			console.log('BEGIN MAIN WHILE LOOP');
-			console.log('firstIndex', firstIndex);
-			console.log('secondIndex', secondIndex);
-			console.log('found:', found);
-			console.log('first[firstIndex]:', first[firstIndex]);
-			console.log('second[secondIndex]:', second[secondIndex]);
-			if (second[secondIndex] != first[firstIndex]) {
-				console.log('GOING TO BEGIN SECOND WHILE LOOP');
+		// convert both items of 'arr' into strings
+		var firstW = String(arr[0]);
+		var secondW = String(arr[1]);
+		// console.log("firstW: ", firstW);
+		// console.log("secondW: ", secondW);
+
+		/* create an array with all the letters from the second item of the input */
+		var secondLetters = arr[1].split('');
+
+		var j = 0;
+
+		while (j < secondLetters.length) {
+			if (firstW.indexOf(secondLetters[j]) === -1) { // returns -1 if not found
+				return false;
 			} else {
-				console.log('SKIPPING SECOND WHILE LOOP');
+				j++;
 			}
-			while (second[secondIndex] != first[firstIndex] && firstIndex < fLen) {
-				found = false;
-				console.log('BEING SECOND WHILE LOOP');
-				console.log('firstIndex', firstIndex);
-				console.log('secondIndex', secondIndex);
-				console.log('found:', found);
-				firstIndex++;
-				console.log('END SECOND WHILE LOOP');
-				console.log('firstIndex', firstIndex);
-				console.log('secondIndex', secondIndex);
-				console.log('found:', found);
-				// if condition not met, i.e. we found similar letters, 
-				// exit this while loop, re-init first index, increment second index
-			}
-			console.log('END MAIN WHILE LOOP, before assigning');
-			console.log('firstIndex', firstIndex);
-			console.log('secondIndex', secondIndex);
-			console.log('found:', found);
-			firstIndex = 0;
-			secondIndex++;
-			found = true;
-			console.log('END MAIN WHILE LOOP, after assigning');
-			console.log('firstIndex', firstIndex);
-			console.log('secondIndex', secondIndex);
-			console.log('found:', found);
 		}
-		// exiting main while loop, we've reached the end of 'second'
-			// if not found, return false and exit everything
-		console.log(found);
-		return found;
+
+		return true;
 	  // return arr;
 	}
 
