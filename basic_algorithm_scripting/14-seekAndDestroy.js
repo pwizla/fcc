@@ -9,7 +9,6 @@ function destroyer(arr) {
   // create a real array from the list of arguments of the destroyer function
   var args = Array.from(arguments);
   // remove the first argument since it's the array to be filtered out
-  // args.shift();
   var arrayToFilter = args.shift();
 
   console.log("args is:", args);
