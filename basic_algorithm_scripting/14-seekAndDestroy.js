@@ -1,7 +1,3 @@
-function toBeDestroyed() {
-	return 
-}
-
 function destroyer(arr) {
   // Remove all the values
   // arguments[0] will be the initial array whose values have to be filtered out
@@ -11,9 +7,15 @@ function destroyer(arr) {
   // remove the first argument since it's the array to be filtered out
   var arrayToFilter = args.shift();
 
-  console.log("args is:", args);
+  console.log("args are:", args);
   console.log("arrayToFilter is:", arrayToFilter);
-  arr = arrayToFilter.filter(toBeDestroyed);
+  
+  function isNotPresent(value) {
+		return args.indexOf(value) == -1;
+	}
+
+  arr = arrayToFilter.filter(isNotPresent);
+  console.log('arr is now:', arr);
   return arr;
 }
 
